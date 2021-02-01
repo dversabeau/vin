@@ -1,0 +1,131 @@
+.contact__section{
+  background-image: url("../images/paper-bg.png");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3rem 3rem 9rem 3rem;
+}
+
+.contact__content--container{
+  display: flex;
+
+  .contact__formulaire--container{
+    width: 65%;
+    padding-right: 3rem;
+    p{
+      color: black;
+    }
+  }
+  .contact__informations{
+    width: 35%;
+    p{
+      color: black;
+
+    }
+  }
+}
+
+.contact__formulaire--row{
+  display: flex;
+  align-items: center;
+  p{
+    color: black;
+  }
+  input[type='checkbox']{
+    margin-right: 1.5rem;
+  }
+}
+
+.footer{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+input[type='text']{
+  border-bottom: 2px solid black;
+  font-family: $playfair;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  min-width: 250px;
+  margin: 0 0 2rem 0;
+}
+
+input[type='text']:first-child{
+  margin-right: 3rem;
+}
+
+textarea{
+  border: 2px solid black;
+  background: rgba(255,255,255,0.4);
+  width: 100%;
+  min-height: 15rem;
+  resize: none;
+  padding: 1rem;
+  font-family: $playfair;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulaire__button--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background: black;
+  color: white;
+  font-family: $playfair;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.3rem 2.5rem 1.6rem 2.5rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.checkbox--row{
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px){
+  .contact__section{
+    min-height: 100vh !important;
+    height: auto !important;
+    h1{
+      margin-bottom: 5rem;
+    }
+  }
+
+  .contact__content--container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contact__content--container,
+  .contact__informations,
+  .contact__formulaire--container{
+    width: unset !important;
+  }
+  .contact__formulaire--row{
+    flex-direction: column;
+  }
+  .checkbox--row{
+    flex-direction: row;
+  }
+  input[type='text']:first-child, input[type='text']{
+    margin-right: 0;
+    width: 100%;
+  }
+  .contact__formulaire--container{
+    margin-bottom: 5rem;
+  }
+
+
+}

@@ -1,0 +1,21 @@
+.footer{
+  background: black;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    text-align: center;
+    margin: 0;
+    padding: 0 1.6rem;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    font-family: $libre;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    a{
+      color: white;
+    }
+  }
+}
